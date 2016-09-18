@@ -1,0 +1,8 @@
+connect to repository
+
+
+
+git log
+git add .
+git commit -m "Messgae"
+git push
