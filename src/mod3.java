@@ -5,6 +5,7 @@ package com.user.xml;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Hashtable;
 
 public class mod3 {
 
@@ -17,8 +18,33 @@ public class mod3 {
 		Collections.sort(lst);
 		System.out.println(lst);
 	}
+	public static void sortModis3(int[] k){
+		ArrayList<Integer> ls = new ArrayList<Integer>();
+		for(int i =0; i< 10; i++ ){
+			for(int j=0; j<k.length; j++){
+				if(k[j]%3==i){
+					ls.add(k[j]);
+				}
+			}
+		}System.out.println(ls);
+	}
+
+//	public static void hashMod(int[] k){
+//		Hashtable<String, Integer> mh = new Hashtable<String, Integer>();
+//		for(int j=0; j<k.length; j++){
+//			if(mh.contains(k[j])){
+//				continue;
+//			}
+//			else{
+//				
+//			}
+//
+//		}System.out.println(ls);
+//	}
 	public static void main(String[] args){
 		int[] k = {7,9,12,11,8,14,27,16,36};
 		sortMod3(k);
+		sortModis3(k);
+//		hashMod(k);
 	}
 }
